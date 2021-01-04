@@ -1,4 +1,12 @@
-export const data = [
+export type TSidebarSection = {
+  id: number;
+  title: string;
+  items: string[];
+};
+
+export type TSidebarData = TSidebarSection[];
+
+export const data: TSidebarData = [
   {
     id: 1,
     title: 'Main',
@@ -22,5 +30,3 @@ export const data = [
     items: ['Mumford and Sons', 'Gym Songs', 'Coding'],
   },
 ];
-
-export type TSidebarData = typeof data[0];
