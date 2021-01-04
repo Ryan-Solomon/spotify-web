@@ -8,6 +8,7 @@ export const Sidebar = () => {
       {data.map((section) => {
         return <SidebarSection section={section} />;
       })}
+      {/* Create playlist component */}
     </nav>
   );
 };

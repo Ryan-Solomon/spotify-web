@@ -9,13 +9,17 @@ type TProps = {
 export const SidebarSection: FC<TProps> = ({ section }) => {
   const { title, items } = section;
   return (
-    <>
-      <h2>{title}</h2>
-      <ul className='sidebar-section'>
+    <section className='sidebar-section-container'>
+      <h2 className='sidebar-section-title'>{title}</h2>
+      <ul className='sidebar-section-items'>
         {items.map((item) => {
-          return <ul key={item}>{item}</ul>;
+          return (
+            <ul className='sidebar-section-item' key={item}>
+              {item}
+            </ul>
+          );
         })}
       </ul>
-    </>
+    </section>
   );
 };
