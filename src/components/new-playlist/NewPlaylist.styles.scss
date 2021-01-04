@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.new-playlist {
+  color: $primary-white;
+  margin-top: auto;
+  margin-bottom: 4rem;
+  border-top: 1px solid $primary-mid-grey;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  h2 {
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 1rem;
+  }
+}
