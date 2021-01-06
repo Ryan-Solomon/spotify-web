@@ -1,9 +1,10 @@
 import './Album.styles.scss';
+import img from '../../assets/img/efe-kurnaz-RnCPiXixooY-unsplash.jpg';
 
 export const Album = () => {
   return (
     <section className='album-container'>
-      <div className='album-photo'>
+      <div style={{ backgroundImage: `url(${img})` }} className='album-photo'>
         <h3>Album Title</h3>
       </div>
       <div className='album-details'>

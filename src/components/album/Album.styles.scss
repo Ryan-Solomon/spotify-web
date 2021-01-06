@@ -2,4 +2,35 @@
 
 .album-container {
   color: $primary-dark-grey;
+  width: 12rem;
+}
+
+.album-photo {
+  background-repeat: none;
+  background-size: cover;
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h3 {
+    padding: 0.8rem;
+    background: $primary-image-overlay;
+  }
+}
+
+.album-details {
+  padding: 0.5rem;
+
+  h3 {
+    color: $primary-white;
+    margin: 0.4rem 0;
+  }
+
+  p {
+    color: $primary-light-grey;
+    line-height: 1.4;
+  }
 }
