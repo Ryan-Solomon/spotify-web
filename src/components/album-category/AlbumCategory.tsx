@@ -7,17 +7,21 @@ export const AlbumCategory = () => {
     <section className='album-category'>
       <header className='album-category__header'>
         <h3>Album Category Header</h3>
-        <button>
-          <AiOutlineLeft />
-        </button>
-        <button>
-          <AiOutlineRight />
-        </button>
+        <div className='album-category__buttons'>
+          <button>
+            <AiOutlineLeft color='white' />
+          </button>
+          <button>
+            <AiOutlineRight color='white' />
+          </button>
+        </div>
       </header>
-      <Album />
-      <Album />
-      <Album />
-      <Album />
+      <section className='album-category__albums'>
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+      </section>
     </section>
   );
 };
