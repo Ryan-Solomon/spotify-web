@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.header {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.header__title {
+  color: $primary-white;
+
+  font-size: 3rem;
+}
